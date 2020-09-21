@@ -1,0 +1,29 @@
+<html>
+<title>my page</title>
+
+<head>
+    <script>
+        const task3Element = document.getElementById('task-3');
+
+        function greet() {
+            alert("hi there!")
+        }
+
+        function greetUser(username) {
+            alert("hi " + username)
+        }
+
+        function combine(str1, str2, str3) {
+            const combinedText = '${str1} + ${str2} + ${str3}';
+            return combinedText;
+        }
+        greetUser('max');
+
+        task3Element.addEventListener('click', greet);
+
+        const combinedString = combine('hi', 'there', '?');
+        alert(combinedString)
+    </script>
+</head>
+
+</html>
